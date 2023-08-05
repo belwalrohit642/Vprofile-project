@@ -25,32 +25,32 @@
   
  # MYSQL SETUP
  
- Login to the db vm
- $ vagrant ssh db01
+ Login to the db VM<br>
+ `vagrant ssh db01`<br>
  
-Verify Hosts entry, if entries missing update the it with IP and hostnames
---> cat /etc/hosts
+Verify Hosts entry, if entries missing update the it with IP and hostnames<br>
+`cat /etc/hosts`<br>
          
- Update OS with latest patches
- $ yum update -y
+ Update OS with the latest patches<br>
+ `yum update -y`<br>
  
- Set Repository
- $ yum install epel-release-y
+ Set Repository<br>
+ `yum install epel-release-y`<br>
  
- Install maria DB package
- $ yum install git mariadb-server -y
+ Install maria DB package<br>
+ `yum install git mariadb-server -y`<br>
  
- Starting and Enabling mariadb-server
- $ systemctl start mariadb
- $ systemctl enable mariadb
+ Starting and Enabling mariadb-server<br>
+ `systemctl start mariadb`<br>
+ `systemctl enable mariadb`<br>
  
- RUN mysql secure installation script
- $ mysql_secure_installation
+ RUN mysql secure installation script<br>
+ `mysql_secure_installation`
  
  
-Set DB name and users.
+Set DB name and users.<br>
 
---> mysql -u root -padmin123  (Here admin123 is a password)<br>
+`mysql -u root -padmin123`  (Here admin123 is a password)<br>
 mysql> create database accounts;<br>
 mysql> grant all privileges on accounts.* TO 'admin'@’%’ identified by 'admin123' ;  (username -admin and password -admin123)<br>
 mysql> FLUSH PRIVILEGES;<br>
