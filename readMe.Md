@@ -21,7 +21,9 @@
          - RabbitMQ (Broker/Queue SVC)<br>
          - Tomcat (Application SVC)<br>
          - Nginx (Web SVC)<br>
-         
+<br>
+![Screenshot from 2023-08-05 13-04-41](https://github.com/belwalrohit642/Vprofile-project/assets/96739082/e5823da5-0880-4ba0-9a95-84d43785ce5c)<br>
+
   
  # MYSQL SETUP
  
